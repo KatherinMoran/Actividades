@@ -1,4 +1,6 @@
-fetch("https://pokeapi.co/api/v2/pokemon/")
+let url = "https://pokeapi.co/api/v2/pokemon/";
+
+fetch(url)
   .then((res) => res.json())
   .then((data) => {
     console.log(data.results)
@@ -13,7 +15,7 @@ function crearCard(data) {
     container.innerHTML += `
         <div class="card">
           <p class="nombre">${data[i].name}</p>
-          <p class="link">${data[i].url}</p>
+          <a href="${data[i].url}">${data[i].url}</a>
         </div>`;
   }
 }

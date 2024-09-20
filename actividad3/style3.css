@@ -20,3 +20,15 @@
 .nombre {
   text-transform: capitalize;
 }
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+#btn {
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  height: 40px;
+}
